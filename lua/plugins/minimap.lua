@@ -1,0 +1,33 @@
+return {
+  -- 展示效果不好
+  -- {
+  --   "echasnovski/mini.nvim",
+  --   version = false,
+  --   keys = function()
+  --     local mini = require("mini.map")
+  --     return {
+  --       {
+  --         "<leader>mc",
+  --         function()
+  --           mini.close()
+  --         end,
+  --         desc = "close minimap",
+  --       },
+  --       {
+  --         "<leader>mo",
+  --         function()
+  --           mini.open()
+  --         end,
+  --         desc = "open minimap",
+  --       },
+  --       {
+  --         "<leader>mt",
+  --         function()
+  --           mini.toggle()
+  --         end,
+  --         desc = "toggle minimap",
+  --       },
+  --     }
+  --   end,
+  -- },
+}

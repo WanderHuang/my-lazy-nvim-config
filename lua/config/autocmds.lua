@@ -1,0 +1,16 @@
+-- Autocmds are automatically loaded on the VeryLazy event
+-- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
+-- Add any additional autocmds here
+
+-- 开启：背景透明，使用终端的背景色
+-- vim.api.nvim_create_autocmd({ "ColorScheme" }, {
+--   pattern = "*",
+--   callback = function(e)
+--     vim.cmd("hi normal guibg=none guifg=none")
+--   end,
+-- })
+--
+--
+-- vim.o.background = "light"
+-- vim.cmd([[colorscheme gruvbox]])
+-- vim.cmd([[colorscheme catppuccin]])

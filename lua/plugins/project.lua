@@ -1,0 +1,21 @@
+return {
+  -- "ahmedkhalf/project.nvim",
+  -- keys = {
+  --   {
+  --     "<leader>pp",
+  --     function()
+  --       require("telescope").load_extension("projects")
+  --     end,
+  --     desc = "Change Project",
+  --   },
+  -- },
+  -- { "ahmedkhalf/project.nvim" },
+  -- {
+  --   "goolord/alpha-nvim",
+  --   dependencies = { "nvim-tree/nvim-web-devicons" },
+  --   config = function()
+  --     require("alpha").setup(require("alpha.themes.startify").config)
+  --   end,
+  -- },
+  -- { "echasnovski/mini.nvim", version = "*" },
+}
