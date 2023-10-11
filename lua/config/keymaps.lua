@@ -10,18 +10,22 @@
 -- vim.keymap.set("i", "<C-b>", "<esc>bi", { desc = "移动到上一个单词", silent = true, remap = true })
 
 -- 编辑器映射
-vim.keymap.set("i", "<C-e>", "<esc>$a")
-vim.keymap.set("i", "<C-a>", "<esc>_i")
+vim.api.nvim_set_keymap("i", "<C-e>", "<esc>$a", { silent = true })
+vim.api.nvim_set_keymap("i", "<C-a>", "<esc>_i", { silent = true })
+vim.api.nvim_set_keymap("i", "<C-n>", "<Down>", { silent = true })
+vim.api.nvim_set_keymap("i", "<C-p>", "<Up>", { silent = true })
+vim.api.nvim_set_keymap("i", "<C-h>", "<Left>", { silent = true })
+vim.api.nvim_set_keymap("i", "<C-l>", "<Right>", { silent = true })
 
 -- copilot映射规则
 vim.g.copilot_no_tab_map = true
-vim.api.nvim_set_keymap("i", "<C-l>", "copilot#Accept('<CR>')", { expr = true, silent = true })
+vim.api.nvim_set_keymap("i", "<C-b>", "copilot#Accept('<CR>')", { expr = true, silent = true })
 
 -- 使用neovide时
 if vim.g.neovide then
   -- 让终端提供"+y "+p能力
-  vim.keymap.set("n", "<D-v>", '"+p')
-  vim.keymap.set("i", "<D-v>", '<C-c>"+pa')
+  vim.api.nvim_set_keymap("n", "<D-v>", '"+p', { silent = true })
+  vim.api.nvim_set_keymap("i", "<D-v>", '<C-c>"+pa', { silent = true })
 end
 -- telescope映射规则
 -- vim.api.nvim_set_keymap("n", "<C-p>", ":Telescope projects<CR>", { noremap = true, silent = true })
